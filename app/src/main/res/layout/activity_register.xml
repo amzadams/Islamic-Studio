@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#9cf">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_centerInParent="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/emailRA"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:id="@+id/name"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="Whatsapp number"
+                    android:inputType="number"
+                    android:id="@+id/numberRA"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:id="@+id/passwordRA"/>
+                <Button
+                    android:id="@+id/regRA"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:text="Register"
+                    android:background="@color/light_blue"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="3dp"/>
+                <TextView
+                    android:id="@+id/old_Acc"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:text="Already have an account? Log in "
+                    android:layout_gravity="center"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
